@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    tools:context=".LabTestActivity">
+
+
+    <TextView
+        android:id="@+id/Doctordetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="24*7 HEALTHCARE"
+        android:textAlignment="center"
+        android:textColor="@color/Light_purple"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.398"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TitleLTD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:layout_marginTop="32dp"
+        android:text="Delivary location: Mumbai"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Doctordetails" />
+
+    <TextView
+        android:id="@+id/LTDpackages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:layout_marginTop="20dp"
+        android:text="LAb Test and Packages"
+        android:textAlignment="center"
+        android:textColor="@color/Yellow"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/edittextLTD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TitleLTD" />
+
+    <ListView
+        android:id="@+id/edittextLTD"
+        android:layout_width="349dp"
+        android:layout_height="412dp"
+        android:layout_margin="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TitleLTD"
+        app:layout_constraintVertical_bias="0.279" />
+
+    <Button
+        android:id="@+id/LTDbackbutton"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="48dp"
+        android:text="Back"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.886"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittextLTD" />
+
+    <Button
+        android:id="@+id/LTDGoTocart"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="48dp"
+        android:text="Go To Cart"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittextLTD" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
